@@ -7,7 +7,7 @@
 Solo letras minusculas
 No se permite acentuación de palabras 
 */
-function noRefresh () {
+function noActualizar () {
     event.preventDefault();
 }
 
@@ -15,13 +15,13 @@ function pasarTexto() {
 
    var texto = encriptarFrase();
    document.getElementById("msg").value = texto;
-   noRefresh();
+   noActualizar();
    return texto;
 
 }
 
 function encriptarFrase() {
-   noRefresh();
+    noActualizar();
    var mensaje = document.getElementById("input-texto").value;
    var msgEncrip = "";
    for (var i = 0; i < mensaje.length; i++) {
@@ -70,12 +70,12 @@ No se permite acentuación de palabras
 function desencriptar(){
    var texto = inversa();
    document.getElementById('msg').value = texto;
-   noRefresh();
+   noActualizar();
    return texto;
 }
 
 function inversa(){
-   noRefresh();
+    noActualizar();
    var mensaje = document.getElementById('input-texto').value;
    var msgEncrip = "";
    msgEncrip = mensaje.replaceAll("ai","a");
