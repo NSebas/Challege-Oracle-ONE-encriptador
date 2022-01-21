@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<img src="img/Candado.png" alt="Candado" class="candado">
+<body>
+  
+  <h1 class="titulo">Cifrado & De-Cifrado</h1>
+  <br>
+  <h2 class="titulo2">Bienvenido al encriptador y desencriptador de texto:</h2>
+  <br>
+  <br>
+  <main class="main">
+    <section class="form box">
+      <form action="">
+        <img class= "vector" src="img/Vector.png" alt="Vector" > <label for="input-texto"> Introducir solo letras minúsculas, sin acento: </label>
+        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
+        <input class="btn" onclick="pasarTexto()" type="submit" value="Encriptar!" id="btn-encriptar">
+        <input class="btn" onclick="desencriptar()" type="submit" value="Desencriptar!" id="btn-desencriptar"> 
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <br><h2 id="">Mensaje encriptado:</h2>
+      <input class="text-input" type="text" id="msg"></input>
+      <input class="btn" onclick="copiarTexto()" type="submit" value="Copiar" id="btn-copy">
+    </section>
+  </main>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <img src="img/LogoLogoAlura.png" alt="Alura Logo" class="alura logo">
+    <h3>Todos los derechos reservados || © 2022 Schiavoni Néstor Sebastián <br><br><a href="https://github.com/NSebas" target="_blank" title="github">Mi GitHub</a></h3> 
+  </footer>
+  
+
+  
+
+  <script src="encriptador.js"></script>
+</body>
+</html>
